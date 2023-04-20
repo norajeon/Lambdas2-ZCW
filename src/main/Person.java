@@ -12,6 +12,12 @@ public class Person {
     String emailAddress;
     int age;
 
+    public Person(String name, Sex gender, String emailAddress) {
+        this.name = name;
+        this.gender = gender;
+        this.emailAddress = emailAddress;
+    }
+
     public Person(String name, LocalDate birthday, Sex gen, String emailAddress) {
         this.name = name;
         this.birthday = birthday;
@@ -69,7 +75,7 @@ public class Person {
                 '}';
     }
 
-    public void printPerson() {
-        System.out.println(toString());
+    public String printPerson() {
+        return toString();
     }
 }
